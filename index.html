@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Report</title>
+
+    <!-- Boorstrap Cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Table section -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <!-- Table Strat Here -->
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Site Name</th>
+                            <th>Last Updated Date</th>
+                            <th>Scan Report </th>
+                            <th colspan="2">Page Speed (Mobile & Desktop)</th>
+                            <th>Other Issues</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!------ JP Rice -------->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>jpricemill.in</td>
+                            <td>16/09/22</td>
+                            <!--Scan-->
+                            <td>
+                                No Issue
+                                <img class="img-model" id="1" onclick="modelFun(this.id)" src="./Images/jp_rice/s.jpg" loading="lazy">
+                            </td>
+                            <td class="m-page-speed"><!-- Page Speed Mob-->
+                                59
+                                <img class="img-model" id="2" onclick="modelFun(this.id)" src="./Images/jp_rice/m.jpg" loading="lazy">
+                            </td>
+                            <td class="d-page-speed"><!-- Page Speed Desktop-->
+                                92
+                                <img class="img-model" id="3" onclick="modelFun(this.id)" src="./Images/jp_rice/d.jpg" loading="lazy">
+                            </td>
+                            <td><!-- Other Issue -->
+
+                            </td>
+                        </tr>
+
+                        <!---------Nilima Surgical ------->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>nilimasurgical.co.in</td>
+                            <td>16/09/22</td>
+                            <!--Scan-->
+                            <td>
+                                No Issue
+                                <img class="img-model" id="4" onclick="modelFun(this.id)"  src="./Images/nilima_surgical/s.jpg"loading="lazy">
+                            </td>
+                            <td class="m-page-speed"><!-- Page Speed Mob-->
+                                68
+                                <img class="img-model" id="5" onclick="modelFun(this.id)"  src="./Images/nilima_surgical/m.JPG"loading="lazy">
+                            </td>
+                            <td class="d-page-speed"><!-- Page Speed Desktop-->
+                                90
+                                <img class="img-model" id="6" onclick="modelFun(this.id)"  src="./Images/nilima_surgical/d.JPG"loading="lazy">
+                            </td>
+                            <td><!-- Other Issue -->
+
+                            </td>
+                        </tr>
+                        <!-- Chitrayan art School -->
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>chitrayanartschool.co.in</td>
+                            <td>16/09/22</td>
+                            <!--Scan-->
+                            <td>
+                                No Issue
+                                <img class="img-model" id="7" onclick="modelFun(this.id)"  src="./Images/chitrayan_art_school/s.JPG" loading="lazy">
+                            </td>
+                            <td class="m-page-speed"><!-- Page Speed Mob-->
+                                60
+                                <img class="img-model" id="8" onclick="modelFun(this.id)"  src="./Images/chitrayan_art_school/m.JPG" loading="lazy">
+                            </td>
+                            <td class="d-page-speed"><!-- Page Speed Desktop-->
+                                94
+                                <img class="img-model" id="9" onclick="modelFun(this.id)"  src="./Images/chitrayan_art_school/d.JPG" loading="lazy">
+                            </td>
+                            <td><!-- Other Issue -->
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End Table section -->
+
+    
+    <!-- ========= image Preview Model ========== -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+    
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+    
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+        <!-- BootStrap JS -->
+    </div>
+    <!-- ================== Model End  ========= -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
